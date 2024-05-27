@@ -6,12 +6,11 @@ import "slick-carousel/slick/slick-theme.css";
 import { Padding } from "@mui/icons-material";
 
 const images = [
-  "./images/1.png",
-  "./images/2.png",
-  "./images/3.png",
-  "./images/4.png",
-  "./images/5.png",
-  "./images/6.png",
+  "./images/masPopulares/1.png",
+  "./images/masPopulares/2.png",
+  "./images/masPopulares/3.png",
+  "./images/masPopulares/4.png",
+  "./images/masPopulares/5.png",
 ];
 
 const MasPopulares = () => {
@@ -51,21 +50,9 @@ const MasPopulares = () => {
   return (
     <Box sx={{ width: "90%", margin: "auto", marginTop: 4 }}>
       <Box sx={{ position: "relative", textAlign: "center", mb: 3 }}>
-        {/* <Box
-          sx={{
-            position: "absolute",
-            top: "50%",
-            left: "50%",
-            width: "60%",
-            height: "50%",
-            backgroundColor: "#C25252",
-            borderRadius: 4,
-            transform: "translate(-50%, -50%)",
-            zIndex: -1,
-          }}
-        /> */}
         <Typography
           variant="h4"
+          id="masPopulares"
           sx={{
             display: "inline-block",
             padding: "10px 20px",

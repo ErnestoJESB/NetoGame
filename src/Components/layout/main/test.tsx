@@ -50,7 +50,6 @@ const ImageSlider = () => {
         height: "100vh",
       }}
     >
-      <Box></Box>
       <Box
         component="img"
         src={images[currentIndex]}
@@ -70,48 +69,48 @@ const ImageSlider = () => {
       <Box
         sx={{
           position: "absolute",
-          bottom: { xs: "50px", sm: "100px", md: "150px" },
+          bottom: "20px",
           left: "50%",
           transform: "translateX(-50%)",
           textAlign: "center",
           color: "white",
           width: "100%",
-          fontFamily: "Arial, sans-serif",
-          h2: {
-            fontSize: { xs: "3rem", sm: "4rem", md: "5rem" },
-            fontWeight: "bold",
-            margin: "0",
-          },
-          p: {
-            fontSize: { xs: "1.2rem", sm: "3rem", md: "2rem" },
-            margin: "0",
-            lineHeight: { xs: "1.4", sm: "1.6", md: "1.8" },
-          },
-          button: {
-            fontSize: { xs: "1rem", sm: "1.5rem", md: "2rem" },
-            padding: "10px 20px",
-            borderRadius: "20px",
-            border: "none",
-            backgroundColor: "#800011",
-            color: "white",
-            cursor: "pointer",
-            transition: "background-color 0.3s ease",
-            "&:hover": {
-              backgroundColor: "#C25252",
-            },
-          },
         }}
       >
-        <h2>NetoGame</h2>
-        <p>
-          Tu destino para juegos emocionantes y noticias de última hora. Únete a
-          nuestra comunidad y vive la pasión por el gaming.
-        </p>
-        <Box mt={{ xs: 2, sm: 3, md: 4 }}>
-          {" "}
-          {/* Ajuste del margen superior en diferentes dispositivos */}
-          <button style={{ marginRight: "10px" }}>Más info</button>
-          <button style={{ marginLeft: "10px" }}>Novedades</button>
+        <Box>
+          <IconButton
+            onClick={prevSlide}
+            sx={{
+              backgroundColor: "rgba(0, 0, 0, 0.5)",
+              color: "white",
+              "&:hover": {
+                backgroundColor: "rgba(0, 0, 0, 0.7)",
+              },
+              marginRight: "10px",
+            }}
+          >
+            <ArrowBackIos />
+          </IconButton>
+          <IconButton
+            onClick={nextSlide}
+            sx={{
+              backgroundColor: "rgba(0, 0, 0, 0.5)",
+              color: "white",
+              "&:hover": {
+                backgroundColor: "rgba(0, 0, 0, 0.7)",
+              },
+              marginLeft: "10px",
+            }}
+          >
+            <ArrowForwardIos />
+          </IconButton>
+        </Box>
+        <h2>Título</h2>
+        <p>Subtítulo</p>
+
+        <Box mt={2}>
+          <button style={{ marginRight: "10px" }}>Botón 1</button>
+          <button style={{ marginLeft: "10px" }}>Botón 2</button>
         </Box>
       </Box>
     </Box>

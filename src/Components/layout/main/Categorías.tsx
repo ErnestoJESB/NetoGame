@@ -1,21 +1,34 @@
 import React from "react";
-import { Box, Typography, Grid } from "@mui/material";
+import { Box, Typography, Grid, Button } from "@mui/material";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 const categories = [
-  { src: "./images/1.png", label: "ACCIÓN" },
-  { src: "./images/2.png", label: "PLATFORM" },
-  { src: "./images/3.png", label: "SIMULACIÓN" },
-  { src: "./images/4.png", label: "CARRERAS" },
-  { src: "./images/5.png", label: "SHOOTING" },
-  { src: "./images/6.png", label: "RPG" },
+  { src: "./images/categorias/1.png", label: "ACCIÓN" },
+  { src: "./images/categorias/2.png", label: "PLATFORM" },
+  { src: "./images/categorias/3.png", label: "SIMULACIÓN" },
+  { src: "./images/categorias/4.png", label: "CARRERAS" },
+  { src: "./images/categorias/5.png", label: "SHOOTING" },
+  { src: "./images/categorias/6.png", label: "RPG" },
 ];
 
 const Categorias = () => {
   return (
-    <Box sx={{ width: "90%", margin: "auto", marginTop: 4 }}>
+    <Box
+      sx={{
+        width: "90%",
+        margin: "auto",
+        marginTop: 4,
+        "@media (max-width: 768px)": {
+          height: "auto",
+        },
+      }}
+    >
       <Box sx={{ display: "flex", alignItems: "center", marginBottom: 2 }}>
-        <Typography variant="h5" sx={{ color: "#fff", marginRight: 1 }}>
+        <Typography
+          id="categorias"
+          variant="h5"
+          sx={{ color: "#fff", marginRight: 1 }}
+        >
           CATEGORÍAS
         </Typography>
         <ArrowForwardIosIcon sx={{ color: "#fff" }} />
@@ -34,7 +47,8 @@ const Categorias = () => {
                   boxShadow: "0 4px 8px rgba(0,0,0,0.2)",
                 }}
               />
-              <Box
+              <Button
+                variant="contained"
                 sx={{
                   position: "absolute",
                   bottom: 0,
@@ -46,10 +60,13 @@ const Categorias = () => {
                   padding: "5px 0",
                   borderBottomLeftRadius: 2,
                   borderBottomRightRadius: 2,
+                  "@media (max-width: 768px)": {
+                    fontSize: 12,
+                  },
                 }}
               >
-                <Typography variant="body1">{category.label}</Typography>
-              </Box>
+                {category.label}
+              </Button>
             </Box>
           </Grid>
         ))}
