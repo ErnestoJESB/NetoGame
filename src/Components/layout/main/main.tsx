@@ -4,6 +4,8 @@ import Categorias from "./Categorías";
 import Novedades from "./Novedades";
 import { Box } from "@mui/system";
 import Actualizaciones from "./Actualizaciones";
+import Avengers from "./Avengers";
+
 function Main() {
   return (
     <Box sx={{ width: "100%" }}>
@@ -18,6 +20,9 @@ function Main() {
       </Box>
       <Box sx={{ marginBottom: 4 }}>
         <Actualizaciones />
+      </Box>
+      <Box sx={{ marginBottom: 4 }}>
+        <Avengers />
       </Box>
     </Box>
   );
