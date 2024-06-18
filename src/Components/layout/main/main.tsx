@@ -4,8 +4,6 @@ import Categorias from "./Categorías";
 import Novedades from "./Novedades";
 import { Box } from "@mui/system";
 import Actualizaciones from "./Actualizaciones";
-import Avengers from "./Avengers";
-import Formulario from "./Formulario";
 
 function Main() {
   return (
@@ -21,9 +19,6 @@ function Main() {
       </Box>
       <Box sx={{ marginBottom: 4 }}>
         <Actualizaciones />
-      </Box>
-      <Box sx={{ marginBottom: 4 }}>
-        <Formulario />
       </Box>
     </Box>
   );
