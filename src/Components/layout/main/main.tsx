@@ -6,6 +6,7 @@ import { Box } from "@mui/system";
 import Actualizaciones from "./Actualizaciones";
 import Avengers from "./Avengers";
 import Formulario from "./Formulario";
+import Counter from "./UseReducer";
 
 function Main() {
   return (
@@ -24,6 +25,9 @@ function Main() {
       </Box>
       <Box sx={{ marginBottom: 4 }}>
         <Formulario />
+      </Box>
+      <Box sx={{ marginBottom: 4 }}>
+        <Counter />
       </Box>
     </Box>
   );
