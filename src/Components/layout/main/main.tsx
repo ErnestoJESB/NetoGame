@@ -4,12 +4,9 @@ import Categorias from "./Categorías";
 import Novedades from "./Novedades";
 import { Box } from "@mui/system";
 import Actualizaciones from "./Actualizaciones";
-<<<<<<< HEAD
 import Avengers from "./Avengers";
 import Formulario from "./Formulario";
 import Counter from "./UseReducer";
-=======
->>>>>>> e6b54ba0ea02b4d7bdfe658522c9c9d4d98e5231
 
 function Main() {
   return (
