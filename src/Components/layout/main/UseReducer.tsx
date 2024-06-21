@@ -30,7 +30,7 @@ function Counter() {
         onClick={() => dispatch({ type: "increment" })}
         style={{ margin: "5px" }}
       >
-        Increment
+        Incrementa
       </Button>
       <Button
         variant="contained"
@@ -38,14 +38,14 @@ function Counter() {
         onClick={() => dispatch({ type: "decrement" })}
         style={{ margin: "5px" }}
       >
-        Decrement
+        Decrementa
       </Button>
       <Button
         variant="contained"
         onClick={() => dispatch({ type: "reset" })}
         style={{ margin: "5px" }}
       >
-        Reset
+        Resetea
       </Button>
     </Container>
   );
