@@ -1,8 +1,5 @@
 import * as React from "react";
 import ResponsiveAppBar from "./AppBar";
-import { AspectRatio } from "@mui/icons-material";
-import { Typography } from "@mui/material";
-import MultiActionAreaCard from "../main/card";
 import ImageSlider from "../main/slider";
 function Header() {
   return (
