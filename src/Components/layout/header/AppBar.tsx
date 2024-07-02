@@ -12,10 +12,10 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import MenuIcon from "@mui/icons-material/Menu";
+import LoginGoogle from "./LoginGoogle";
 
 const pages = ["Más populares", "Categorias", "Novedades"];
 const ids = ["masPopulares", "categorias", "novedades"];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function ResponsiveAppBar() {
   const [open, setOpen] = React.useState(false); // Estado para el menú desplegable
@@ -154,13 +154,14 @@ function ResponsiveAppBar() {
           </Box>
 
           {/* Botón de usuario */}
-          <Box sx={{ flexGrow: 0 }}>
+          <LoginGoogle />
+          {/* <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton>
                 <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
               </IconButton>
             </Tooltip>
-          </Box>
+          </Box> */}
         </Toolbar>
       </Container>
     </AppBar>
