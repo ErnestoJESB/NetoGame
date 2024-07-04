@@ -8,11 +8,14 @@ import Avengers from "./Avengers";
 import Formulario from "./Formulario";
 import Counter from "./UseReducer";
 import ToDoList from "./ToDoList";
+import UseRef from "./UseRef";
+import ListaFiltrada from "./UseMemo";
+import Memorama from "./Memorama";
 
 function Main() {
   return (
     <Box sx={{ width: "100%" }}>
-      <Box sx={{ marginBottom: 4 }}>
+      {/* <Box sx={{ marginBottom: 4 }}>
         <MasPoulares />
       </Box>
       <Box sx={{ marginBottom: 4 }}>
@@ -32,6 +35,15 @@ function Main() {
       </Box>
       <Box sx={{ marginBottom: 4 }}>
         <ToDoList />
+      </Box>
+      <Box sx={{ marginBottom: 4 }}>
+        <UseRef />
+      </Box>
+      <Box sx={{ marginBottom: 4 }}>
+        <ListaFiltrada />
+      </Box> */}
+      <Box sx={{ marginBottom: 4 }}>
+        <Memorama />
       </Box>
     </Box>
   );
